@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aurora Fest 2026 - Campus Event Registration</title>
+</head>
+<body>
+
+  <header>
+    <h1>Aurora Fest 2026</h1>
+    <p>Our college's annual three-day cultural and technical festival.</p>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About the Fest</h2>
+      <p>
+        Aurora Fest 2026 brings together students from every department for three days
+        of competitions, workshops, and performances. This year's theme is
+        "Innovate. Create. Celebrate."
+      </p>
+      <img src="https://images.squarespace-cdn.com/content/v1/5fce63270356d927d7eecdbd/7ae672e3-5dae-4987-9478-709fe2f3c993/event_.jpg
+           alt="Aurora Fest 2026 poster showing the fest dates, September 12 to 14, over a night-sky background">
+    </section>
+
+    <section id="events">
+      <h2>Events</h2>
+
+      <article>
+        <h3>Techathon</h3>
+        <p>Date: <time datetime="2026-09-12">September 12, 2026</time></p>
+        <p>
+          A 12-hour overnight hackathon where teams of up to 4 build a working
+          prototype around a surprise problem statement announced at the start.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2376lscrXBPffb8-ZnXSm9iu4pVPfcAuZ5vihJzoSg&s=10">
+      </article>
+
+      <article>
+        <h3>Battle of Bands</h3>
+        <p>Date: <time datetime="2026-09-13">September 13, 2026</time></p>
+        <p>
+          College bands compete live on the main stage for a chance to open
+          for the closing-night headline act.
+        </p>
+        <img src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-cross-and-music-microphone-and-guitar-in-color-png-image_12446970.png" alt="Icon of an electric guitar crossed with a microphone">
+      </article>
+
+      <article>
+        <h3>Painting Palette Workshop</h3>
+        <p>Date: <time datetime="2026-09-14">September 14, 2026</time></p>
+        <p>
+          A hands-on acrylic painting workshop for beginners, led by the Fine
+          Arts department. All materials are provided.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgFq3sWYzniJRY-TyLQiKO3j3yrMGpv8CMugcxpTOHg&s=10" alt="Icon of a paint palette with three paintbrushes">
+      </article>
+    </section>
+
+    <section id="register">
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+
+        <p>
+          <label for="reg-name">Full Name:</label><br>
+          <input type="text" id="reg-name" name="regName"
+                 required minlength="4" maxlength="60">
+        </p>
+
+        <p>
+          <label for="reg-email">Email:</label><br>
+          <input type="email" id="reg-email" name="regEmail" required>
+        </p>
+
+        <p>
+          <label for="reg-phone">Phone Number:</label><br>
+          <input type="tel" id="reg-phone" name="regPhone"
+                 required pattern="[0-9]{10}"
+                 title="Enter a 10-digit phone number, digits only, no spaces or dashes">
+        </p>
+
+        <p>
+          <label for="reg-age">Age:</label><br>
+          <input type="number" id="reg-age" name="regAge"
+                 required min="16" max="60">
+        </p>
+
+        <p>
+          <label for="reg-event">Which event will you attend?</label><br>
+          <select id="reg-event" name="regEvent" required>
+            <option value="">-- Choose an event --</option>
+            <option value="techathon">Techathon</option>
+            <option value="battle-of-bands">Battle of Bands</option>
+            <option value="painting-workshop">Painting Palette Workshop</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>T-shirt Size:</legend>
+
+          <input type="radio" id="size-s" name="tshirtSize" value="S" required>
+          <label for="size-s">Small</label><br>
+
+          <input type="radio" id="size-m" name="tshirtSize" value="M">
+          <label for="size-m">Medium</label><br>
+
+          <input type="radio" id="size-l" name="tshirtSize" value="L">
+          <label for="size-l">Large</label><br>
+
+          <input type="radio" id="size-xl" name="tshirtSize" value="XL">
+          <label for="size-xl">Extra Large</label>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="reg-terms" name="regTerms" required>
+          <label for="reg-terms">I agree to the terms and conditions</label>
+        </p>
+
+        <p>
+          <button type="submit">Submit Registration</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+
+        <p>
+          <label for="con-name">Name:</label><br>
+          <input type="text" id="con-name" name="conName"
+                 required minlength="2" maxlength="60">
+        </p>
+
+        <p>
+          <label for="con-email">Email:</label><br>
+          <input type="email" id="con-email" name="conEmail" required>
+        </p>
+
+        <p>
+          <label for="con-subject">Subject:</label><br>
+          <input type="text" id="con-subject" name="conSubject"
+                 required maxlength="100">
+        </p>
+
+        <p>
+          <label for="con-message">Message:</label><br>
+          <textarea id="con-message" name="conMessage"
+                    required minlength="10" maxlength="500" rows="5" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <h2>Contact Details</h2>
+    <p>Aurora Fest Committee, Student Activity Centre, Main Campus</p>
+    <p>Email: aurorafest@college.edu | Phone: 0123456789</p>
+    <p>&copy; 2026 Aurora Fest Committee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
